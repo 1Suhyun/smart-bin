@@ -1,0 +1,55 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Smart Bin Prototype</title>
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+
+<!-- Scene 1: Welcome -->
+<div id="scene1" class="scene">
+    <!-- Separate image element -->
+     <div class="scene-img-container">
+        <img src="assets/bg.png" alt="Center Image" class="scene-center-img">
+        </div>
+    <p class="welcome-text">Welcome to GreenLoop</p>
+    <p class="scan-text">What would you like me to scan today?</p>
+    <p class="tap-text">Tap anywhere to start</p>
+</div>
+
+
+<!-- Scene 2: Scan -->
+<div id="scene2" class="scene">
+    <p id="placeItemText" class="top-text">Place item below to scan </p>
+    <div id="webcam-container"></div>
+    <p id="arrowDown" class="arrow">↓</p>
+</div>
+
+<!-- Scene 3: Result -->
+<div id="scene3" class="scene">
+    <div class="center-content">
+    <p id="binInstruction"></p>
+    <p id="binPhrase"></p>
+    <video id="instructionVideo" class="instruction-video" autoplay muted loop>
+      Your browser does not support the video tag.
+    </video>
+    <button onclick="goToScene(4); showCompleteText();">Next</button>
+    </div>
+</div>
+
+<!-- Scene 4: Complete -->
+<div id="scene4" class="scene">
+    <div class="center-content">
+    <p id="completeText"></p>
+    <p id="idPromptText" class="id-prompt-text"></p> <!-- new line -->
+    <button class="button-two" onclick="resetToStart()">Complete</button>
+</div>
+</div>
+
+<script src="https://cdn.jsdelivr.net/npm/@tensorflow/tfjs@latest/dist/tf.min.js"></script>
+<script src="https://cdn.jsdelivr.net/npm/@teachablemachine/image@latest/dist/teachablemachine-image.min.js"></script>
+<script src="script.js"></script>
+
+</body>
+</html>
