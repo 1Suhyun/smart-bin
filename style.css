@@ -15,12 +15,12 @@ body {
 .scene { 
     position: relative; 
     flex-direction: column;
-    justify-content: center; /* centers vertically */
-    align-items: center;     /* centers horizontally */
-    height: 100vh;           /* full viewport height */
+    justify-content: center; 
+    align-items: center;     
+    height: 100vh;          
     width: 100%;
-    justify-content: center; /* vertical centering */
-    align-items: center;     /* horizontal centering */
+    justify-content: center; 
+    align-items: center;    
 }
 
 .scene:first-child {
@@ -34,16 +34,16 @@ body {
     display: flex;
     justify-content: center;
     align-items: center;
-    margin-bottom: 1rem; /* space below the image */
+    margin-bottom: 1rem; 
     z-index: 0;
 }
 
-/* Image itself */
+
 .scene-center-img {
    top:30%;
-    max-width: 100%;   /* scale the image */
-    max-height: 100%;   /* scale the image */
-    height: auto;     /* keep aspect ratio */
+    max-width: 100%;   
+    max-height: 100%;   
+    height: auto; 
     object-fit: contain;
 }
 
@@ -53,7 +53,7 @@ body {
     left: 50%;
     transform: translate(-50%, -50%);
     color: black;
-    font-size: 1.2vw;
+    font-size: 13px;
     font-weight: bold;
     text-align: center;
 }
@@ -63,18 +63,18 @@ body {
     top: 25%;
     left: 50%;
     transform: translate(-50%, -50%);
-    font-size: 1.6vw;
+    font-size: 20px;
     
     color: #797979;
     text-align: center;
     z-index: 1;
-    line-height: 150%; /* 34.5px */
+    line-height: 150%; 
 letter-spacing: -0.253px;
 }
 
 .scan-text{
  position: absolute;
-    top: 40%; /* center vertically */
+    top: 40%; 
     left: 50%;
     transform: translate(-50%, -50%);
     font-size: 2.8vw;
@@ -88,7 +88,7 @@ font-family: "MyFont";
 font-size: 50px;
 font-style: bold;
 font-weight: 500;
-line-height: 130%; /* 65px */
+line-height: 130%; 
 letter-spacing: -0.55px;
 
 }
@@ -122,7 +122,7 @@ letter-spacing: -0.55px;
 
 /* Arrow */
 .arrow {
-    font-size: 80px; /* bigger arrow */
+    font-size: 80px; 
     color: black;
     position: absolute;
     top: calc(50% + 180px);
@@ -132,10 +132,10 @@ letter-spacing: -0.55px;
 
 /* Small scanning text */
 .arrow.scanning {
-    font-size: 24px; /* smaller than arrow */
+    font-size: 24px; 
     color: black;
     position: absolute;
-    top: calc(50% + 230px); /* a bit below the arrow */
+    top: calc(50% + 230px);
     left: 50%;
     transform: translateX(-50%);
     font-weight: bold;
@@ -165,7 +165,7 @@ letter-spacing: -0.55px;
   text-align: center;
 }
 
-/* Wrapper to keep text + button centered together */
+
 .center-content {
   display: flex;
   flex-direction: column;
@@ -174,7 +174,7 @@ letter-spacing: -0.55px;
   text-align: center;
 }
 
-/* Instruction text */
+
 .result-text {
   font-size: 2vw;
   color: white;
@@ -222,9 +222,9 @@ button {
 }
 
 .instruction-video {
-  width: 100%;      /* adjust as needed */
+  width: 100%;     
   max-width: 500px;
-  height: 500px;    /* maintain aspect ratio */
+  height: 500px;    
   border-radius: 12px;
 
   
@@ -250,14 +250,14 @@ letter-spacing: -0.253px;
 
 }
 
-/* Extra ID prompt text */
+
 .id-prompt-text {
     font-size: 1vw;
     color: black;
     font-weight: 500;
     text-align: center;
     line-height: 1.4;
-    top: 50%; /* space before the button */
+    top: 50%; 
     position: absolute;
 }
   
